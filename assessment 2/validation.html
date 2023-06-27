@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+   <form action="jk.html" style="text-align: center;">
+    <label for="'username">USERNAME:
+        <input type="text" id="user" onkeyup="return validatename()">
+    </label>
+    </p>
+    <p><span id="err"></span></p>
+    <p>
+      <label for="phone no">PHONE NO
+        <input type="text" id="no" onkeyup="return validateNo()" >
+      </label>
+      <p><span id="er"></span></p>  
+    </p>
+    <p>
+        <label for="email">EMAIL</label>
+        <input type="text" id="field1" onkeyup=" return validateEmail()" placeholder="Enter your email">
+        <span id="err1"></span>
+    </p>
+    <p>
+        <label for="">PASSWORD</label>
+        <input type="password" id="field2" onkeyup=" return validatePass()">
+        <span id="err2"></span>
+    </p>
+    <p>
+        <button onclick="return varify()">Submit</button>
+    </p>
+   </form> 
+   <script src="validation.js"></script>
+</body>
+</html>
